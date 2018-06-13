@@ -70,7 +70,7 @@
 								<li><span class="icon major style3"><img src="./images/redux-seeklogo.com.svg" alt="" class = 'redux'></span>Redux</li>
 								<li><span class="icon major style3"><img src="./images/socketso-seeklogo.com.svg" alt="" class = 'redux'></span>Socket.io</li>
 								<li><span class="icon major style3"><img src="./images/Postgresql_elephant.svg" alt="" class = 'redux'></span>PostgreSQL</li>
-								<!-- <li><span class="icon major style3"><img src="./images/jest-seeklogo.com.svg" alt="" class = 'redux'></span>Jest</li> -->
+								<li><span class="icon major style3"><img src="./images/jest-seeklogo.com.svg" alt="" class = 'redux'></span>Jest</li>
 								<li><span class="icon major style3"><img src="./images/auth0-seeklogo.com.svg" alt="" class = 'redux'></span>Auth0</li>
 							</ul>
 
@@ -86,7 +86,57 @@
 							</div>
 						</section>
 						<section class="spotlight">
-							<div class="image"><img src="images/Screen Shot 2018-05-23 at 5.49.29 PM.png" alt="" /></div><div class="content">
+							<div class="image"><style>
+								.mySlides {display:none; max-height: 400px;}
+								.w3-left, .w3-right, .w3-badge {cursor:pointer}
+								.w3-badge {height:13px;width:13px;padding:0}
+								.w3-container {display: flex; justify-content: space-around; align-items: center; width: 100%}
+								.w3-display-container {width: 100%}
+								</style>
+								<body>
+								
+								<div class="w3-content w3-display-container" style="max-width:800px">
+								  <img class="mySlides" src="./images/oversight/Screen Shot 2018-06-05 at 8.15.16 PM.png" style="width:100%">
+								  <img class="mySlides" src="./images/oversight/Screen Shot 2018-06-05 at 7.44.07 PM.png" style="width:100%">
+								  <img class="mySlides" src="./images/oversight/Screen Shot 2018-06-05 at 7.45.11 PM.png" style="width:100%">
+								  <img class="mySlides" src="./images/oversight/Screen Shot 2018-06-05 at 7.46.06 PM.png" style="width:100%">
+								  <img class="mySlides" src="./images/oversight//Screen Shot 2018-06-05 at 7.46.59 PM.png" style="width:100%">
+								  <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
+									<div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
+									<div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
+								  </div>
+								</div>
+								
+								<script>
+								var slideIndex = 1;
+								showDivs(slideIndex);
+								
+								function plusDivs(n) {
+								  showDivs(slideIndex += n);
+								}
+								
+								function currentDiv(n) {
+								  showDivs(slideIndex = n);
+								}
+								
+								function showDivs(n) {
+								  var i;
+								  var x = document.getElementsByClassName("mySlides");
+								  var dots = document.getElementsByClassName("demo");
+								  if (n > x.length) {slideIndex = 1}    
+								  if (n < 1) {slideIndex = x.length}
+								  for (i = 0; i < x.length; i++) {
+									 x[i].style.display = "none";  
+								  }
+								  for (i = 0; i < dots.length; i++) {
+									 dots[i].className = dots[i].className.replace(" w3-white", "");
+								  }
+								  x[slideIndex-1].style.display = "block";  
+								  dots[slideIndex-1].className += " w3-white";
+								}
+								</script>
+								
+								</body></div><div class="content">
 								<h2>Oversight - Personally Developed</h2>
 								<h3>Construction Task Management</h3>
 								<p>Oversight simplifies and makes efficient the day-to-day processes of construction project management. I utilize Socket.io and the Watson Translation API to improve communication and overcome language barriers. Its progress log empowers supervisors by giving them the accountability their team needs and the transparency their clients want.</p>
@@ -98,13 +148,61 @@
 							</div>
 						</section>
 						<section class="spotlight">
-							<div class="image"><img src="./images/Screen Shot 2018-06-05 at 10.11.56 AM.png" alt="" /></div><div class="content">
+							<div class="image"><style>
+								.mySlides2 {display:none; max-height: 400px;}
+								.w3-left2, .w3-right2, .w3-badge2 {cursor:pointer}
+								.w3-badge2 {height:13px;width:13px;padding:0}
+								.w3-container2 {display: flex; justify-content: space-around; align-items: center; width: 100%}
+								.w3-display-container2 {width: 100%}
+								</style>
+								<body>
+
+								<div class="w3-content w3-display-container2" style="max-width:800px">
+								  <img class="mySlides2" src="./images/sketchapp/Screen Shot 2018-06-05 at 7.56.27 PM.png" style="width:100%">
+								  <img class="mySlides2" src="./images/sketchapp/Screen Shot 2018-06-05 at 10.11.56 AM.png" style="width:100%">
+								  <img class="mySlides2" src="./images/sketchapp/Screen Shot 2018-06-05 at 8.00.56 PM.png" style="width:100%">
+								  <img class="mySlides2" src="./images/sketchapp/Screen Shot 2018-06-13 at 8.34.49 AM.png" style="width:100%">
+								  <div class="w3-center w3-container2 w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
+									<div class="w3-left2 w3-hover-text-khaki" onclick="plusDivs2(-1)">&#10094;</div>
+									<div class="w3-right2 w3-hover-text-khaki" onclick="plusDivs2(1)">&#10095;</div>
+								  </div>
+								</div>
+								
+								<script>
+								var slideIndex2 = 1;
+								showDivs2(slideIndex2);
+								
+								function plusDivs2(n) {
+								  showDivs2(slideIndex2 += n);
+								}
+								
+								function currentDiv2(n) {
+								  showDivs2(slideIndex2 = n);
+								}
+								
+								function showDivs2(n) {
+								  var i;
+								  var x = document.getElementsByClassName("mySlides2");
+								  var dots = document.getElementsByClassName("demo2");
+								  if (n > x.length) {slideIndex2 = 1}    
+								  if (n < 1) {slideIndex2 = x.length}
+								  for (i = 0; i < x.length; i++) {
+									 x[i].style.display = "none";  
+								  }
+								  for (i = 0; i < dots.length; i++) {
+									 dots[i].className = dots[i].className.replace(" w3-white", "");
+								  }
+								  x[slideIndex2-1].style.display = "block";  
+								  dots[slideIndex2-1].className += " w3-white";
+								}
+								</script>
+								</div><div class="content">
 								<h2>Sketch App Clone - Group Developed</h2>
 								<h3>A basic clone of the UX/UI digital design software.</h3>
 								<p>The Sketch App Clone was a project meant to challenge our skills. Developed without the help of libraries, it features CSS shape creation, manipulation, and styling. We use mouse events and Redux to change and store attributes of various shapes on a canvas. I personally created and managed the input tool bar which included large amounts of conditional rendering, redux, the landing page parallax scroll, connecting the shape mouse manipulation to the input tool bar, and more.</p>
 								<div class = 'project-btns'>
 										<li><a href="#" class="button fit special">Live Site Coming Soon</a></li>
-										<li><a href="https://github.com/jsarge11/sketch-app-clone" class="button fit special">GitHub</a></li>
+										<li><a target="_blank" href="https://github.com/jsarge11/sketch-app-clone" class="button fit special">GitHub</a></li>
 										<!-- <li><a href="#" class="button fit special">Video Walkthrough</a></li> -->
 								</div>
 							</div>
