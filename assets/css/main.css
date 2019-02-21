@@ -2660,7 +2660,8 @@
 		.redux {
 			fill: white;
 			height: 2em;
-			transform: rotate(45deg)
+			transform: rotate(45deg);
+			max-width: 42px;
 		}
 
 			@media screen and (max-width: 1280px) {
