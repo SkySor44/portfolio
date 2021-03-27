@@ -68,6 +68,12 @@
 					<p>"Your most important work is always ahead of you, never behind you."<br> - Stephen Covey</p>
 				</header>
 				<ul class="icons major">
+					<li><span class="icon major style3"><img src="./images/vue.svg" alt="" class='redux'></span>Vue.js</li>
+					<li><span class="icon major style3"><img src="./images/gitlab.svg" alt="" class='redux'></span>GitLab</li>
+					<li><span class="icon major style3"><img src="./images/gcp.svg" alt="" class='redux'></span>GCP</li>
+					<li><span class="icon major style3"><img src="./images/cypress.svg" alt="" class='redux'></span>Cypress.io</li>
+					<li><span class="icon major style3"><img src="./images/python.svg" alt="" class='redux'></span>Python</li>
+					<li><span class="icon major style3"><img src="./images/golang.svg" alt="" class='redux'></span>Go</li>
 					<li><span class="icon major style3"><img src="./images/elm-logo.svg" alt="" class='redux'></span>Elm</li>
 					<li><span class="icon major style3"><i class="fab fa-git-square" id="new-icons"></i></span>Git</li>
 					<li><span class="icon major style3"><i class="fab fa-node-js" id="new-icons"></i></span>Node.js</li>
@@ -75,10 +81,10 @@
 					<li><span class="icon major style2"><i class="fab fa-react" id="new-icons"></i></span> React.js</li>
 					<li><span class="icon major style3"><i class="fab fa-css3" id="new-icons"></i></span>CSS3</li>
 					<li><span class="icon major style3"><i class="fab fa-html5" id="new-icons"></i></span>HTML5</li>
-					<li><span class="icon major style3"><img src="./images/redux-seeklogo.com.svg" alt="" class='redux'></span>Redux</li>
-					<li><span class="icon major style3"><img src="./images/socketso-seeklogo.com.svg" alt="" class='redux'></span>Socket.io</li>
+					<!-- <li><span class="icon major style3"><img src="./images/redux-seeklogo.com.svg" alt="" class='redux'></span>Redux</li> -->
+					<!-- <li><span class="icon major style3"><img src="./images/socketso-seeklogo.com.svg" alt="" class='redux'></span>Socket.io</li> -->
 					<li><span class="icon major style3"><img src="./images/Postgresql_elephant.svg" alt="" class='redux'></span>PostgreSQL</li>
-					<li><span class="icon major style3"><img src="./images/jest-seeklogo.com.svg" alt="" class='redux'></span>Jest</li>
+					<!-- <li><span class="icon major style3"><img src="./images/jest-seeklogo.com.svg" alt="" class='redux'></span>Jest</li> -->
 					<li><span class="icon major style3"><img src="./images/auth0-seeklogo.com.svg" alt="" class='redux'></span>Auth0</li>
 				</ul>
 
@@ -96,7 +102,231 @@
 				</div>
 			</section>
 			<section class="spotlight">
-				<div class="image" style="width:50%;">
+				<div class="image">
+					<style>
+						br {
+							display: block !important;
+						}
+						.mySlides5 {
+							display: none;
+							max-height: 600px;
+						}
+
+						.w3-left,
+						.w3-right,
+						.w3-badge {
+							cursor: pointer
+						}
+
+						.w3-badge {
+							height: 13px;
+							width: 13px;
+							padding: 0
+						}
+
+						.w3-container {
+							display: flex;
+							justify-content: space-around;
+							align-items: center;
+							width: 100%
+						}
+
+						.w3-display-container {
+							width: 100%
+						}
+					</style>
+
+					<body>
+
+						<div class="w3-content w3-display-container" style="max-width:1000px">
+							<img class="mySlides5" src="./images/gargle/Screen Shot 2021-03-27 at 1 (1).png" style="width:100%">
+							<img class="mySlides5" src="./images/gargle/Screen Shot 2021-03-27 at 1 (2).png" style="width:100%">
+							<img class="mySlides5" src="./images/gargle/Screen Shot 2021-03-27 at 1 (3).png" style="width:100%">
+							<img class="mySlides5" src="./images/gargle/Screen Shot 2021-03-27 at 1 (4).png" style="width:100%">
+							<img class="mySlides5" src="./images/gargle/Screen Shot 2021-03-27 at 1 (5).png" style="width:100%">
+							<img class="mySlides5" src="./images/gargle/Screen Shot 2021-03-27 at 1 (6).png" style="width:100%">
+							<img class="mySlides5" src="./images/gargle/Screen Shot 2021-03-27 at 1.png" style="width:100%">
+							<img class="mySlides5" src="./images/gargle/Screen Shot 2021-03-27 at 2 (1).png" style="width:100%">
+							<img class="mySlides5" src="./images/gargle/Screen Shot 2021-03-27 at 2.png" style="width:100%">
+							<div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
+								<div class="w3-left w3-hover-text-khaki" onclick="plusDivs5(-1)">&#10094;</div>
+								<div class="w3-right w3-hover-text-khaki" onclick="plusDivs5(1)">&#10095;</div>
+							</div>
+						</div>
+
+						<script>
+							var slideIndex = 1;
+							showDivs5(slideIndex);
+
+							function plusDivs5(n) {
+								showDivs5(slideIndex += n);
+							}
+
+							function currentDiv3(n) {
+								showDivs5(slideIndex = n);
+							}
+
+							function showDivs5(n) {
+								var i;
+								var x = document.getElementsByClassName("mySlides5");
+								var dots = document.getElementsByClassName("demo");
+								if (n > x.length) { slideIndex = 1 }
+								if (n < 1) { slideIndex = x.length }
+								for (i = 0; i < x.length; i++) {
+									x[i].style.display = "none";
+								}
+								for (i = 0; i < dots.length; i++) {
+									dots[i].className = dots[i].className.replace(" w3-white", "");
+								}
+								x[slideIndex - 1].style.display = "block";
+								if (dots[slideIndex - 1]) {
+									dots[slideIndex - 1].className += " w3-white";
+								}
+								
+							}
+						</script>
+
+					</body>
+				</div>
+				<div class="content">
+					<h2>Gargle - Primary Contributor to Website and Application</h2>
+					<h3>Dental Marketing Platform</h3>
+					<p>One of the primary offerings of Gargle is an up and coming web platform that allows practices to receive insight and analytics into the success of their dental practice's marketing efforts. I am the assigned owner of this project and built all the features on the frontend and have been a strong contributor to the microservice API's. The frontend has been built in Vue.js and the API's are written in either Go or Python (using Flask).
+						<br><br>
+						Some of the features I have built are:<br>
+						- User authorization using Auth0<br>
+						- A Direct Mail dashboard that includes building various charts using D3.js or Chart.js and involve a significant amount of user interaction and data manipulation<br>
+						- A payment portal integration with a payment processor<br>
+						- A Geographic analytics map that is integrated with Google maps using their heatmaps, map markers, and polygons<br>
+						- A Resource Hub that enables the viewing and creating of articles via an in-house rich content editor that we built using Quill.js<br>
+						- A user activity log as a piece towards HIPAA compliance<br>
+						- A permissions system that is tied between our CRM, web application, and Auth0<br>
+						- An in-house issue reporter that integrates directly with our engineering team's issue management application.<br>
+						- I was a major contributor to an in-house, custom short URL generator<br>
+						<br><br>
+						At Gargle, I also rebuilt their website which was originally built in Angular and is now built with Nuxt.js which has increased our SEO capabilities and improved performance.
+						<br><br>
+						I have also been one of the primary contributors to managing all things in GitLab. This includes:<br>
+						- Setting up CI/CD pipelines that integrate with our deployments in GCP (Google Cloud Platform)<br>
+						- Creating private npm packages using their npm package registry<br>
+						- Setting up our engineering team's workflow processes using a slightly modified approach to Kanban and Scrum<br>
+						<br>
+						I have also been a primary contributor to setting up our docker/kubernetes deployments on Google Cloud Platform</p>
+					<div class='project-btns'>
+						<li><a href="https://app.gargle.com" class="button fit special" target="_blank">Live Site</a></li>
+						<!-- <li><a href="https://github.com/toesas/vaast-web" class="button fit special" target="_blank">GitHub</a></li> -->
+						<!-- <li><a href="#" class="button fit special">Video Walkthrough</a></li> -->
+					</div>
+				</div>
+			</section>
+			<section class="spotlight">
+				<div class="image">
+					<style>
+						.mySlides4 {
+							display: none;
+							max-height: 500px;
+						}
+
+						.w3-left,
+						.w3-right,
+						.w3-badge {
+							cursor: pointer
+						}
+
+						.w3-badge {
+							height: 13px;
+							width: 13px;
+							padding: 0
+						}
+
+						.w3-container {
+							display: flex;
+							justify-content: space-around;
+							align-items: center;
+							width: 100%
+						}
+
+						.w3-display-container {
+							width: 100%
+						}
+					</style>
+
+					<body>
+
+						<div class="w3-content w3-display-container" style="max-width:1000px">
+							<img class="mySlides4" src="./images/blytzpayApp2.png" style="width:100%">
+							<!-- <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
+								<div class="w3-left w3-hover-text-khaki" onclick="plusDivs3(-1)">&#10094;</div>
+								<div class="w3-right w3-hover-text-khaki" onclick="plusDivs3(1)">&#10095;</div>
+							</div> -->
+						</div>
+
+						<script>
+							var slideIndex = 1;
+							showDivs3(slideIndex);
+
+							function plusDivs3(n) {
+								showDivs3(slideIndex += n);
+							}
+
+							function currentDiv3(n) {
+								showDivs3(slideIndex = n);
+							}
+
+							function showDivs3(n) {
+								var i;
+								var x = document.getElementsByClassName("mySlides4");
+								var dots = document.getElementsByClassName("demo");
+								if (n > x.length) { slideIndex = 1 }
+								if (n < 1) { slideIndex = x.length }
+								for (i = 0; i < x.length; i++) {
+									x[i].style.display = "none";
+								}
+								for (i = 0; i < dots.length; i++) {
+									dots[i].className = dots[i].className.replace(" w3-white", "");
+								}
+								x[slideIndex - 1].style.display = "block";
+								if (dots[slideIndex - 1]) {
+									dots[slideIndex - 1].className += " w3-white";
+								}
+								
+							}
+						</script>
+
+					</body>
+				</div>
+				<div class="content">
+					<h2>Blytzpay - Full-Stack Contributor</h2>
+					<h3>Text-to-Pay Platform</h3>
+					<p>BlytzPay is a text-to-pay platform built for reducing friction and significantly reducing the need for collections by providing a payment option that is most approachable and memorable for a customer.
+						<br><br>
+						At BlytzPay I was the primary contributor to all frontend code (React & Vue.js) and a large contributor to the API (Python). During this position, some of the projects I worked on were:<br>
+						- Maintaining the web application we were migrating off of that was built in React<br>
+						- Building the new and improved web application in Vue.js<br>
+						- Building the internal application in Vue.js<br>
+						- Implemented Internationalization on the frontend for the new web application including an interface for translators to input new translations of values in other languages<br>
+						- Built dozens of API endpoints, many of which were heavily integrated with Twilio, SendGrid and others<br>
+						- Created a payment portal that met PCI compliance<br>
+						- Mentored other developers on a day to day basis<br>
+						
+						<br>
+						Some of the technologies I worked with:<br>
+						- Vue.js (Vue Bootstrap, Vuelidate, Vue I18N, Axios, and many more packages and technologies)<br>
+						- React<br>
+						- MySQL and Postgres SQL<br>
+						- Python (Django, Chalice, SQLAlchemy and more)<br>
+						- AWS on a serverless architecture (exposed on a day to day basis but did not build the architecture)<br>
+						- Twilio & SendGrid by Twilio (I also attended a Twilio conference for a deeper dive and hands-on training)<br>
+						- Jira</p>
+					<div class='project-btns'>
+						<li><a href="https://app.bytzpay.com" class="button fit special" target="_blank">Live Site</a></li>
+						<!-- <li><a href="https://github.com/toesas/vaast-web" class="button fit special" target="_blank">GitHub</a></li> -->
+						<!-- <li><a href="#" class="button fit special">Video Walkthrough</a></li> -->
+					</div>
+				</div>
+			</section>
+			<section class="spotlight">
+				<div class="image">
 					<style>
 						.mySlides3 {
 							display: none;
@@ -170,7 +400,10 @@
 									dots[i].className = dots[i].className.replace(" w3-white", "");
 								}
 								x[slideIndex - 1].style.display = "block";
-								dots[slideIndex - 1].className += " w3-white";
+								if (dots[slideIndex - 1]) {
+									dots[slideIndex - 1].className += " w3-white";
+								}
+								
 							}
 						</script>
 
@@ -187,7 +420,7 @@
 						interactions on a canvas like page, custom inputs, wysiwyg editors/chat and more. The complexity of Vast OS has
 						pushed me to my limits constantly over the past year and have grown me into a far more competant web developer.</p>
 					<div class='project-btns'>
-						<li><a href="https://app.vastos.com" class="button fit special" target="_blank">Live Site</a></li>
+						<li><a href="https://app.vastos.com" class="button fit special disabled" target="_blank">Live Site (Out of Business)</a></li>
 						<!-- <li><a href="https://github.com/toesas/vaast-web" class="button fit special" target="_blank">GitHub</a></li> -->
 						<!-- <li><a href="#" class="button fit special">Video Walkthrough</a></li> -->
 					</div>
@@ -264,7 +497,10 @@
 									dots[i].className = dots[i].className.replace(" w3-white", "");
 								}
 								x[slideIndex - 1].style.display = "block";
-								dots[slideIndex - 1].className += " w3-white";
+								if (dots[slideIndex - 1]) {
+									dots[slideIndex - 1].className += " w3-white";
+								}
+								
 							}
 						</script>
 
@@ -278,11 +514,11 @@
 						log empowers supervisors by giving them the accountability their team needs and the transparency their clients
 						want.</p>
 					<div class='project-btns'>
-						<li>
+						<!-- <li>
 							<div href="https://construction-oversight.com/#/" class="button fit special disabled" target="_blank">Live Site
 								(Under
 								Construction)</div>
-						</li>
+						</li> -->
 						<li><a href="https://github.com/SkySor44/personal-project" class="button fit special" target="_blank">GitHub</a></li>
 						<!-- <li><a href="#" class="button fit special">Video Walkthrough</a></li> -->
 					</div>
@@ -358,7 +594,10 @@
 									dots[i].className = dots[i].className.replace(" w3-white", "");
 								}
 								x[slideIndex2 - 1].style.display = "block";
-								dots[slideIndex2 - 1].className += " w3-white";
+								if (dots[slideIndex2 - 1]) {
+									dots[slideIndex2 - 1].className += " w3-white";
+								}
+								
 							}
 						</script>
 				</div>
@@ -371,7 +610,7 @@
 						large amounts of conditional rendering, redux, the landing page parallax scroll, connecting the shape mouse
 						manipulation to the input tool bar, and more.</p>
 					<div class='project-btns'>
-						<li><a href="https://sketchappclone.com" target="_blank" class="button fit special">Live Site</a></li>
+						<!-- <li><a href="https://sketchappclone.com" target="_blank" class="button fit special">Live Site</a></li> -->
 						<li><a target="_blank" href="https://github.com/jsarge11/sketch-app-clone" class="button fit special">GitHub</a></li>
 						<!-- <li><a href="#" class="button fit special">Video Walkthrough</a></li> -->
 					</div>
@@ -384,18 +623,17 @@
 			<div class="inner">
 				<header class="major">
 					<div>
-						<img src="./images/family-face.png" alt="me" style='width: 100px; height: auto; border-radius: 20px;'>
+						<img src="./images/me.png" alt="me" style='width: 100px; height: auto; border-radius: 20px;'>
 					</div>
 					<h2>About Me</h2>
-					<p style="text-align: center;">I am what you would call a total nerd. I spend my free time studying code, business
-						books, or religious books. If I'm not doing that, I just needed a mental break and am getting fresh air either
-						hunting, fishing, or mountain biking.</p>
+					<p style="text-align: center;">I am what you would call a total nerd. I spend my free time studying code, books, or soaking up useless information on YouTube. If I'm not doing that, I just needed a mental break and am getting fresh air either
+						hunting, fishing, or hanging out with my son.</p>
 				</header>
 				<ul class="features">
 					<li class="icon fa-book">
 						<h3 style="text-align: center;">Passion For Learning</h3>
 						<p style="text-align: center;">Over the past few years I've started to understand how my mind learns best.
-							Because of this I have study various topics just because I get bored. My love for learning is what led me to
+							Because of this I have studied various topics just because I get bored. My love for learning is what led me to
 							developing. I know I will never learn as fast as the tech changes, and I couldn't be happier about it!</p>
 					</li>
 					<li class="icon fa-code">
